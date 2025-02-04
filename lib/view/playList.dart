@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:octo_image/octo_image.dart';
 
-import '../bloc/models/musicModel.dart';
+import '../models/musicModel.dart';
 
 class PlayList extends StatefulWidget {
   const PlayList({super.key});

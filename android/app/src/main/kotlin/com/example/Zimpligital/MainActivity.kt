@@ -1,4 +1,4 @@
-package com.example.Zimpligital.example
+package com.example.Zimpligital
 
 import io.flutter.embedding.android.FlutterActivity
 
