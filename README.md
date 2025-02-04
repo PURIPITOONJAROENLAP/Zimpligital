@@ -1,3 +1,4 @@
 # Music Playlist
 
-download apk build/app/outputs/flutter-apk/app-release.apk
+download apk 
+[app-release.apk](..%2Fapp-release.apk)
