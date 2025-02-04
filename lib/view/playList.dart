@@ -26,9 +26,14 @@ class _PlayListState extends State<PlayList> {
   ];
 
   void _togglePlay(MusicModel song) async {
-    if (_currentSong?.src == song.src && _isPlaying) {
-      await _audioPlayer.pause();
-      setState(() => _isPlaying = false);
+    if (_currentSong?.src == song.src) {
+      if (_isPlaying) {
+        await _audioPlayer.pause();
+        setState(() => _isPlaying = false);
+      } else {
+        await _audioPlayer.resume();
+        setState(() => _isPlaying = true);
+      }
     } else {
       await _audioPlayer.stop();
       await _audioPlayer.play(AssetSource(song.src!));
